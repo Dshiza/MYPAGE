@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta lang="en" charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+    <title>Andre Duarte-Portfolio</title>
+</head>
+
+<body>
+    <header>
+        <nav role="navigation" class="nav flex container" aria-label="Only-navigation">
+            <div class="logoContainer">
+                <img class="logoContainer_img" src="./assets/LOGO-bs.png" alt="Portfolio logo ADPORTFOLIO">
+            </div>
+            <ul class="nav__menu flex">
+                <li class="nav__item" tabindex="0">home</li>
+                <li class="nav__item" tabindex="0">works</li>
+                <li class="nav__item" tabindex="0">about-me</li>
+                <li class="nav__item" tabindex="0">contacts</li>
+                <li class="nav__item">
+                    <span aria-selected="en"></span>
+                    <label for="language" class="visually-hidden">Language selection</label>
+                    <select name="language" id="language">
+                        <option value="EN" aria-selected="en" data-flag="en">&#127468;&#127463;</option>
+                        <option value="SP" aria-selected="sp" data-flag="sp">&#127466;&#127480;</option>
+                        <option value=" PT" aria-selected="pt" data-flag="pt">&#127477;&#127481;</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+
+
+            <div class="introduction ">
+                <section>
+                    <h1 class="introduction__title">André is a <span class="introduction__highlight">reborn
+                            enthusiast</span> and an
+                        <span class="introduction__highlight">aspiring software developer</span>
+                    </h1>
+                    <p class="introduction__subtitle">He crafts responsive websites where technologies meet creativity
+                    </p>
+                    <button class="introduction__cta">Contact me !!</button>
+                </section>
+                <div class="introduction__profile-container">
+                    <img class="introduction__profile-img" src="./assets/me.png" alt="Portfolio logo ADPORTFOLIO">
+                    <!-- <img class="introduction__profile-blob" src="./assets/blob1.png" alt="blob for design purposes"> -->
+                    <p class="project-status">Currently working on GitHub</p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <script src="script.js"></script>
+</body>
+
+</html>
