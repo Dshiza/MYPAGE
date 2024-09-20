@@ -3,7 +3,7 @@
 
 <head>
     <meta lang="en" charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
@@ -16,7 +16,17 @@
             <div class="logoContainer">
                 <img class="logoContainer_img" src="./assets/LOGO-bs.png" alt="Portfolio logo ADPORTFOLIO">
             </div>
-            <ul class="nav__menu flex">
+            <button aria-expanded="false" aria-controls="main-menu" class="small-nav">
+
+                <svg aria-hidden="true" focusable="false" width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                    <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                Menu
+            </button>
+            <ul id="main-menu" class="nav__menu ">
                 <li class="nav__item" tabindex="0">home</li>
                 <li class="nav__item" tabindex="0">works</li>
                 <li class="nav__item" tabindex="0">about-me</li>
@@ -27,35 +37,62 @@
                     <select name="language" id="language">
                         <option value="EN" aria-selected="en" data-flag="en">&#127468;&#127463;</option>
                         <option value="SP" aria-selected="sp" data-flag="sp">&#127466;&#127480;</option>
-                        <option value=" PT" aria-selected="pt" data-flag="pt">&#127477;&#127481;</option>
+                        <option value="PT" aria-selected="pt" data-flag="pt">&#127477;&#127481;</option>
                     </select>
                 </li>
             </ul>
         </nav>
         <div class="container">
-
-
             <div class="introduction ">
-                <section>
+                <section class="introduction__left">
                     <h1 class="introduction__title">André is a <span class="introduction__highlight">reborn
                             enthusiast</span> and an
                         <span class="introduction__highlight">aspiring software developer</span>
                     </h1>
                     <p class="introduction__subtitle">He crafts responsive websites where technologies meet creativity
                     </p>
-                    <button class="introduction__cta">Contact me !!</button>
+                    <button class="introduction__cta" href="#">Contact me !!</button>
                 </section>
                 <div class="introduction__profile-container">
                     <img class="introduction__profile-img" src="./assets/me.png" alt="Portfolio logo ADPORTFOLIO">
                     <!-- <img class="introduction__profile-blob" src="./assets/blob1.png" alt="blob for design purposes"> -->
                     <p class="project-status">Currently working on GitHub</p>
                 </div>
+
             </div>
+            <div class="introduction__quote">
+
+                <div class="introduction__quote-1">
+                    <!-- <img src="assets/quote.png" alt=""> -->
+                    <q class="introduction__quote-text">Be curious. Read widely. Try new things. What people call
+                        intelligence just boils down to
+                        curiosity.</q>
+
+                </div>
+
+                <footer class="introduction__quote-footer">
+                    <div></div>
+                    <p>- Aaron Swartz</p>
+                </footer>
+            </div>
+        </div>
+        <div class="container">
+            <div class="projects">
+                <div class="projects__header">
+                    <h2>projects</h2>
+                    <span>view all</span>
+                </div>
+            </div>
+
         </div>
 
 
     </header>
+    <!-- <div style="width:100%;min-height:7000px; background-color:red; overflow: scroll;"></div> -->
     <script src="script.js"></script>
+    <script>
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,1 @@
+- Need to fix the bug when i go from big to small screen the menu display as flex and not block
